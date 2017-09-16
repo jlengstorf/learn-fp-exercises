@@ -20,6 +20,10 @@ body {
   padding: 1rem;
 }
 
+h1 {
+  font-size: 1.5rem;
+}
+
 .expected,
 .log {
   background-color: var(--color-default-bg);
