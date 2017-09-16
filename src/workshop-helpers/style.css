@@ -1,0 +1,80 @@
+:root {
+  --color-default: #555;
+  --color-default-bg: #eee;
+  --color-error: #a33;
+  --color-error-bg: #fee;
+  --color-success: #3a3;
+  --color-success-bg: #efe;
+  --font-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-monospace: Andale Mono, Consolas, monospace;
+}
+
+html,
+body {
+  font-family: var(--font-default);
+  font-size: 18px;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+}
+
+.expected,
+.log {
+  background-color: var(--color-default-bg);
+  border: 1px solid var(--color-default);
+  font-family: var(--font-monospace);
+  margin-top: 2rem;
+  padding: 0.5rem;
+  position: relative;
+}
+
+.expected::before,
+.log::before,
+.log::after {
+  display: block;
+  font-family: var(--font-default);
+  position: absolute;
+}
+
+.expected:before,
+.log::before {
+  color: var(--color-default);
+  font-size: 62.5%;
+  text-transform: uppercase;
+  top: -15%;
+}
+
+.expected::before {
+  content: 'Expected Output';
+}
+
+.log::before {
+  content: 'Current Output';
+}
+
+.log::after {
+  font-size: 87.5%;
+  top: 110%;
+}
+
+.log--success {
+  background-color: var(--color-success-bg);
+  border-color: var(--color-success);
+}
+
+.log--success::after {
+  color: var(--color-success);
+  content: '🎉 Nailed it. Great job!';
+}
+
+.log--error {
+  background-color: var(--color-error-bg);
+  border-color: var(--color-error);
+}
+
+.log--error::after {
+  color: var(--color-error);
+  content: '👾 There’s a bug somewhere. Try again.';
+}
