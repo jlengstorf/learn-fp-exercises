@@ -34,6 +34,10 @@ h1 {
   position: relative;
 }
 
+.log {
+  margin-bottom: 4rem;
+}
+
 .expected::before,
 .log::before,
 .log::after {
@@ -61,7 +65,7 @@ h1 {
 
 .log::after {
   font-size: 87.5%;
-  top: calc(100% + 0.5rem);
+  top: calc(100% + 0.25rem);
 }
 
 .log--success {
