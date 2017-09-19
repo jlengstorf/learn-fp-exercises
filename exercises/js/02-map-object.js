@@ -1,16 +1,7 @@
 const students = [
-  {
-    name: 'Jessica',
-    score: 92,
-  },
-  {
-    name: 'Kim',
-    score: 67,
-  },
-  {
-    name: 'Fran',
-    score: 85,
-  },
+  { name: 'Jessica', score: 92 },
+  { name: 'Kim', score: 67 },
+  { name: 'Fran', score: 85 },
 ];
 
 // -----------------------------------------------------------------------------
