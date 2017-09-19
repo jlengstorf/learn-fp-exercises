@@ -8,7 +8,7 @@ const students = [
 // Don’t edit above this line.
 // -----------------------------------------------------------------------------
 
-results = students.map(student => ({
+const results = students.map(student => ({
   name: student.name,
   scores: student.scores.map(score => (score >= 70 ? 'PASS' : 'FAIL')),
 }));

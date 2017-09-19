@@ -4,7 +4,7 @@ const scores = [96, 65, 67, 72, 91];
 // Don’t edit above this line.
 // -----------------------------------------------------------------------------
 
-let results = scores.sort();
+const results = scores.sort();
 
 // -----------------------------------------------------------------------------
 // Don’t edit below this line.
