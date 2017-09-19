@@ -8,6 +8,7 @@ const students = [
 // Don’t edit above this line.
 // -----------------------------------------------------------------------------
 
+// TODO convert this complex loop into smaller, composable functions
 let results = [];
 
 for (index = 0; index < students.length; index++) {

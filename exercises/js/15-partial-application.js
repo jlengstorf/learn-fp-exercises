@@ -9,6 +9,7 @@ const albums = [
 // Don’t edit above this line.
 // -----------------------------------------------------------------------------
 
+// TODO use composition and partial application to improve this code
 function getOnlyIndie(albums) {
   let filtered = [];
   for (let album of albums) {
