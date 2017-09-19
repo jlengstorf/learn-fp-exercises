@@ -39,6 +39,7 @@ h1 {
 .log::after {
   display: block;
   font-family: var(--font-default);
+  left: 0;
   position: absolute;
 }
 
@@ -47,7 +48,7 @@ h1 {
   color: var(--color-default);
   font-size: 62.5%;
   text-transform: uppercase;
-  top: -15%;
+  top: -1rem;
 }
 
 .expected::before {
@@ -60,7 +61,7 @@ h1 {
 
 .log::after {
   font-size: 87.5%;
-  top: 110%;
+  top: calc(100% + 0.5rem);
 }
 
 .log--success {
